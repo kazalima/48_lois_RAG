@@ -1,0 +1,16 @@
+data:
+  pdf: "data/raw/48_laws_of_power.pdf"
+  text: "data/processed/48_laws_of_power.txt"
+  embeddings_dir: "data/processed/embedding"
+models:
+  embedding: "all-MiniLM-L6-v2"
+  vocab_size: 50257
+  emb_dim: 768
+  context_length: 256
+  n_layers: 12
+  n_heads: 12
+  drop_rate: 0.1
+  qkv_bias: False
+retrieval:
+  top_k: 5
+  num_embedding_parts: 6

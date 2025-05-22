@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+*.pdf
+data/raw/*  # Ignore tout sauf .gitkeep
+!data/raw/.gitkeep
+data/processed/*  # Ignore tout sauf .gitkeep et sous-dossiers
+!data/processed/.gitkeep
+!data/processed/embedding/
+data/processed/embedding/*  # Ignore les fichiers d'embeddings
+!data/processed/embedding/.gitkeep
+*.pt
+*.pth
+data/processed/embeddings.json
